@@ -1,0 +1,6 @@
+#include <iostream>
+#include <string>
+#include <vector>
+#include <deque>
+
+#define FOR(x, y, z) for(int x=z; x<y; x++)
