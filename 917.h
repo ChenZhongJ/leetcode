@@ -15,7 +15,7 @@ public:
     std::string reverseOnlyLetters(std::string str) {
        	int l = 0, 
 			r = str.size()-1;
-		while(l != r){
+		while(l < r){
 			if(!std::isalpha(str[l])){
 				l++;
 				continue;
@@ -24,8 +24,9 @@ public:
 				r--;
 				continue;
 			}
-			std::swap(str[l], str[r]);	
-			
+			std::swap(str[l], str[r]);
+			l++;
+			r--;	
 		}
        	
         return str;
