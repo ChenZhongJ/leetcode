@@ -3,6 +3,8 @@
 #include <vector>
 #include <queue>
 
+using namespace std;
+
 #define FOR(x, y, z, q) for(int x=z; x<=y; x+=q)
 
 class RecentCounter {
